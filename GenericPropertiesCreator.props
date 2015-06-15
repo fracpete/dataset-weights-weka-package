@@ -1,0 +1,13 @@
+# Customises the list of options given by the GenericObjectEditor
+# for various superclasses.
+#
+# Version: $Revision: 2029 $
+
+# Lists the AttributeWeightsModifier schemes
+weka.filters.unsupervised.attribute.attributeweightsmodifiers.AttributeWeightsModifier=\
+  weka.filters.unsupervised.attribute.attributeweightsmodifiers
+
+# Lists the InstanceWeightsModifier schemes
+weka.filters.unsupervised.instance.instanceweightsmodifiers.InstancesWeightsModifier=\
+  weka.filters.unsupervised.instance.instanceweightsmodifiers
+
