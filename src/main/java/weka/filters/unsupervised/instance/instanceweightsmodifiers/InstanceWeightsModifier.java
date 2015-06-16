@@ -19,24 +19,9 @@
  */
 package weka.filters.unsupervised.instance.instanceweightsmodifiers;
 
-import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import weka.core.Instances;
+
 import java.io.Serializable;
-import java.util.ArrayList;
-
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-
-import weka.classifiers.evaluation.Prediction;
-import weka.core.Attribute;
-import weka.gui.ComponentHelper;
 
 /**
  * Interface for algorithms that modify instance weights.
@@ -45,6 +30,15 @@ import weka.gui.ComponentHelper;
  */
 public interface InstanceWeightsModifier
   extends Serializable {
+
+  /**
+   * Returns the new output format.
+   *
+   * @param inputFormat the input format, before applying the weights
+   * @return		the output format, after applying the weights
+   * @throws Exception	if determination fails
+   */
+  public Instances determineOutputFormat(Instances inputFormat) throws Exception;
 
   /**
    * Modifies the instance weights.
