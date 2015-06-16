@@ -62,7 +62,7 @@ public class FromFile
   private static final long serialVersionUID = -5716918435393494286L;
 
   /** the file to load the instance weights from. */
-  protected File m_WeightsFile;
+  protected File m_WeightsFile = new File(".");
 
   /**
    * Returns a string describing this scheme.
@@ -174,7 +174,7 @@ public class FromFile
 
     if (!m_WeightsFile.exists())
       throw new IllegalArgumentException("Weights file does not exist: " + m_WeightsFile);
-    if (!m_WeightsFile.isDirectory())
+    if (m_WeightsFile.isDirectory())
       throw new IllegalArgumentException("Weights file points to a directory: " + m_WeightsFile);
   }
 
