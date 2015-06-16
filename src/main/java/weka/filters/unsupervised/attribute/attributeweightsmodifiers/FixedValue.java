@@ -180,6 +180,7 @@ public class FixedValue
     Attribute			newAtt;
     int				i;
 
+    m_AttributeIndices.setUpper(inputFormat.numAttributes() - 1);
     atts = new ArrayList<Attribute>();
     for (i = 0; i < inputFormat.numAttributes(); i++) {
       oldAtt = inputFormat.attribute(i);
