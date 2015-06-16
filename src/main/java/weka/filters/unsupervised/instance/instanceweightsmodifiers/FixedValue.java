@@ -37,22 +37,22 @@ import java.util.Vector;
  *
  <!-- options-start -->
  * Valid options are: <p>
- * 
+ *
  * <pre> -weight &lt;number&gt;
  *  The instance weight to use.
  *  (default: 1.0)</pre>
- * 
+ *
  * <pre> -R &lt;range&gt;
  *  The row range to work on.
  * This is a comma separated list of row indices, with "first" and "last" valid values.
  *  Specify an inclusive range with "-".
  *  E.g: "first-3,5,6-10,last".
  *  (default: first-last)</pre>
- * 
+ *
  * <pre> -do-not-check-capabilities
  *  If set, modifier capabilities are not checked
  *  (use with caution).</pre>
- * 
+ *
  <!-- options-end -->
  *
  * @author FracPete (fracpete at waikato dot ac dot nz)
