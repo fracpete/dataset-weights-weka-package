@@ -162,7 +162,7 @@ public class ModifyInstanceWeights
    * @return tip text for this property suitable for displaying in the
    *         explorer/experimenter gui
    */
-  public String attributeIndicesTipText() {
+  public String modifierTipText() {
     return "The weights modifier to apply to the data.";
   }
 
