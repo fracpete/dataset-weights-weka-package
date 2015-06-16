@@ -46,5 +46,5 @@ public interface InstanceWeightsModifier
    * @param data        the data to process
    * @return		the modified data
    */
-  public Instances modifyInstanceWeights(Instances data);
+  public Instances modifyInstanceWeights(Instances data) throws Exception;
 }

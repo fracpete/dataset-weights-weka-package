@@ -29,6 +29,12 @@ import weka.core.Instances;
  <!-- globalinfo-end -->
  *
  <!-- options-start -->
+ * Valid options are: <p>
+ * 
+ * <pre> -do-not-check-capabilities
+ *  If set, modifier capabilities are not checked
+ *  (use with caution).</pre>
+ * 
  <!-- options-end -->
  *
  * @author FracPete (fracpete at waikato dot ac dot nz)
@@ -65,9 +71,10 @@ public class PassThrough
    *
    * @param data        the data to process
    * @return		the modified data
+   * @throws Exception	if modifying fails
    */
   @Override
-  protected Instances doModify(Instances data) {
+  protected Instances doModify(Instances data) throws Exception {
     return data;
   }
 }
