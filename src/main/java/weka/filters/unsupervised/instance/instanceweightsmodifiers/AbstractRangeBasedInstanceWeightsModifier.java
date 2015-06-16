@@ -143,6 +143,6 @@ public abstract class AbstractRangeBasedInstanceWeightsModifier
   protected void check(Instances data) throws Exception {
     super.check(data);
 
-    m_RowIndices.setUpper(data.numAttributes() - 1);
+    m_RowIndices.setUpper(data.numInstances() - 1);
   }
 }
