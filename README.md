@@ -1,7 +1,7 @@
 dataset-weights-weka-package
 ============================
 
-Weka package with filters that allow modifying attribute/instance weights.
+**[WEKA](http://www.cs.waikato.ac.nz/ml/weka/) package** offering filters that allow modification of attribute/instance weights.
 
 The following filters are available:
 * `weka.filters.unsupervised.attribute.ModifyAttributeWeights`
@@ -17,4 +17,12 @@ Available modifiers for *instance* weights:
 * `FromAttribute` - uses the values from a numeric attribute as weights
 * `FromFile` - uses the weights stored in a file
 * `PassThrough` - dummy, does nothing
+
+
+How to use packages
+-------------------
+
+For more information on how to install the package, see:
+
+http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F
 
