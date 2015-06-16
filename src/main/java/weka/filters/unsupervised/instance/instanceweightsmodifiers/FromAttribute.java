@@ -57,7 +57,7 @@ public class FromAttribute
   private static final long serialVersionUID = -5716918435393494286L;
 
   /** the index of the attribute with the instance weights. */
-  protected SingleIndex m_AttributeIndex;
+  protected SingleIndex m_AttributeIndex = new SingleIndex("last");
 
   /**
    * Returns a string describing this scheme.
