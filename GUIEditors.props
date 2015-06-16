@@ -11,4 +11,4 @@
 # version: $Revision: 2019 $
 
 weka.filters.unsupervised.attribute.attributeweightsmodifiers.AttributeWeightsModifier=weka.gui.GenericObjectEditor
-weka.filters.unsupervised.instance.instanceweightsmodifiers.InstancesWeightsModifier=weka.gui.GenericObjectEditor
+weka.filters.unsupervised.instance.instanceweightsmodifiers.InstanceWeightsModifier=weka.gui.GenericObjectEditor

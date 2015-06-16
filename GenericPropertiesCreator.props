@@ -8,6 +8,6 @@ weka.filters.unsupervised.attribute.attributeweightsmodifiers.AttributeWeightsMo
   weka.filters.unsupervised.attribute.attributeweightsmodifiers
 
 # Lists the InstanceWeightsModifier schemes
-weka.filters.unsupervised.instance.instanceweightsmodifiers.InstancesWeightsModifier=\
+weka.filters.unsupervised.instance.instanceweightsmodifiers.InstanceWeightsModifier=\
   weka.filters.unsupervised.instance.instanceweightsmodifiers
 
