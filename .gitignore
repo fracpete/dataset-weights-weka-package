@@ -5,6 +5,7 @@ pom.xml.next
 release.properties
 *~
 *.swp
+*.iml
 build/
 dist/
 doc/
