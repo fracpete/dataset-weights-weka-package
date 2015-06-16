@@ -38,6 +38,12 @@ public class PassThrough
 
   private static final long serialVersionUID = 4432458832078542477L;
 
+  /**
+   * Returns a string describing this filter.
+   *
+   * @return a description of the filter suitable for displaying in the
+   *         explorer/experimenter gui
+   */
   @Override
   public String globalInfo() {
     return "Dummy modifier, doesn't change the weights.";
