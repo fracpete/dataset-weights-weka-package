@@ -40,7 +40,7 @@ public abstract class AbstractInstanceWeightsModifier
   private static final long serialVersionUID = -7927301115335139138L;
 
   /**
-   * Returns a string describing this filter.
+   * Returns a string describing this scheme.
    *
    * @return a description of the filter suitable for displaying in the
    *         explorer/experimenter gui

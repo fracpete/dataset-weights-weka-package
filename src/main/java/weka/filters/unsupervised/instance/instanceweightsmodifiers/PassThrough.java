@@ -39,7 +39,7 @@ public class PassThrough
   private static final long serialVersionUID = -5716918435393494286L;
 
   /**
-   * Returns a string describing this filter.
+   * Returns a string describing this scheme.
    *
    * @return a description of the filter suitable for displaying in the
    *         explorer/experimenter gui
