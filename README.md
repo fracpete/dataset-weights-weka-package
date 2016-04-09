@@ -19,6 +19,12 @@ Available modifiers for *instance* weights:
 * `PassThrough` - dummy, does nothing
 
 
+Releases
+--------
+
+* [2015.6.16](https://github.com/fracpete/dataset-weights-weka-package/releases/download/v2015.6.16/dataset-weights-2015.6.16.zip)
+
+
 How to use packages
 -------------------
 
