@@ -275,7 +275,7 @@
         <version>2.8.1</version>
         <configuration>
           <maxmemory>256m</maxmemory>
-          <subpackages>weka:org</subpackages>
+          <subpackages>weka</subpackages>
           <show>public</show>
           <outputDirectory>${project.basedir}/doc</outputDirectory>
         </configuration>
