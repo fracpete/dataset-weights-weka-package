@@ -1,7 +1,6 @@
-dataset-weights-weka-package
-============================
+# dataset-weights-weka-package
 
-**[WEKA](http://www.cs.waikato.ac.nz/ml/weka/) package** offering filters that allow modification of attribute/instance weights.
+[Weka](http://www.cs.waikato.ac.nz/ml/weka/) package offering filters that allow modification of attribute/instance weights.
 
 The following filters are available:
 * `weka.filters.unsupervised.attribute.ModifyAttributeWeights`
@@ -19,16 +18,32 @@ Available modifiers for *instance* weights:
 * `PassThrough` - dummy, does nothing
 
 
-Releases
---------
+## Releases
 
 * [2015.6.16](https://github.com/fracpete/dataset-weights-weka-package/releases/download/v2015.6.16/dataset-weights-2015.6.16.zip)
 
 
-How to use packages
--------------------
+## How to use packages
 
 For more information on how to install the package, see:
 
 https://waikato.github.io/weka-wiki/packages/manager/
 
+## Maven
+
+Use the following dependency in your `pom.xml`:
+
+```xml
+    <dependency>
+      <groupId>com.github.fracpete</groupId>
+      <artifactId>dataset-weights-weka-package</artifactId>
+      <version>2015.6.16</version>
+      <type>jar</type>
+      <exclusions>
+        <exclusion>
+          <groupId>nz.ac.waikato.cms.weka</groupId>
+          <artifactId>weka-dev</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+```
