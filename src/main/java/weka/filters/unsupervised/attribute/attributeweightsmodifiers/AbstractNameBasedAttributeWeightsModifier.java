@@ -200,7 +200,7 @@ public abstract class AbstractNameBasedAttributeWeightsModifier
   }
 
   /**
-   * Checks wether the name is a match (takes invert into account).
+   * Checks whether the name is a match (takes invert into account).
    *
    * @param name	the name to check
    * @return		true if match
