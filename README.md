@@ -8,6 +8,8 @@ The following filters are available:
 
 Available modifiers for *attribute* weights:
 * `FixedValue` - applies the user-specified weight to selected range of attributes  
+* `FixedValueByName` - applies the user-specified weight to attributes that match 
+  the specified regular expression (matching can be inverted)  
 * `FromFile` - uses the weights stored in a file
 * `PassThrough` - dummy, does nothing
 
