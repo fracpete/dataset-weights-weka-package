@@ -67,7 +67,7 @@ public class PassThrough
   }
 
   /**
-   * Peforms the actual modification of the attribute weights.
+   * Performs the actual modification of the attribute weights.
    *
    * @param data        the data to process
    * @return		the modified data
