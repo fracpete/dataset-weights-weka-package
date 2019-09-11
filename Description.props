@@ -5,10 +5,10 @@
 PackageName=dataset-weights
 
 # Version (required)
-Version=2015.6.16
+Version=2019.9.11
 
 #Date (year-month-day)
-Date=2015-06-16
+Date=2019-09-11
 
 # Title (required)
 Title=Dataset weights
@@ -29,7 +29,7 @@ License=GPL 3.0
 Description=Contains various filters for modifying attribute/instance weights.
 
 # Package URL for obtaining the package archive (required)
-PackageURL=https://github.com/fracpete/dataset-weights-weka-package/releases/download/v2015.6.16/dataset-weights-2015.6.16.zip
+PackageURL=https://github.com/fracpete/dataset-weights-weka-package/releases/download/v2019.9.11/dataset-weights-2019.9.11.zip
 
 # URL for further information
 URL=https://github.com/fracpete/dataset-weights-weka-package
