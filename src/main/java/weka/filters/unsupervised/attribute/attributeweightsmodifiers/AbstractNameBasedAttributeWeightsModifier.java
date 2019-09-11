@@ -42,7 +42,7 @@ public abstract class AbstractNameBasedAttributeWeightsModifier
 
   private static final long serialVersionUID = -6347414272696310567L;
 
-  /** the attribute range to work on. */
+  /** for matching the attribute names. */
   protected String m_RegExp = ".*";
 
   /** whether to invert the matching sense. */
