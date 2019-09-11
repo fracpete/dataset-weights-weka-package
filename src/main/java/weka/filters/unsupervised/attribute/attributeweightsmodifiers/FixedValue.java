@@ -13,9 +13,9 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
+/*
  * FixedValue.java
- * Copyright (C) 2015 University of Waikato, Hamilton, NZ
+ * Copyright (C) 2015-2019 University of Waikato, Hamilton, NZ
  */
 
 package weka.filters.unsupervised.attribute.attributeweightsmodifiers;
@@ -29,6 +29,7 @@ import weka.core.Utils;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.Vector;
 
 /**
@@ -107,8 +108,6 @@ public class FixedValue
   @Override
   public void setOptions(String[] options) throws Exception {
     String 	tmpStr;
-    String 	className;
-    String[] 	classOptions;
 
     tmpStr = Utils.getOption("weight", options);
     if (tmpStr.length() != 0) {
@@ -128,14 +127,14 @@ public class FixedValue
    */
   @Override
   public String[] getOptions() {
-    Vector<String> result = new Vector<String>();
+    List<String> result = new ArrayList<String>();
 
     result.add("-weight");
     result.add("" + getWeight());
 
     Collections.addAll(result, super.getOptions());
 
-    return result.toArray(new String[result.size()]);
+    return result.toArray(new String[0]);
   }
 
   /**
@@ -174,7 +173,6 @@ public class FixedValue
    * @throws Exception	if determination fails
    */
   public Instances determineOutputFormat(Instances inputFormat) throws Exception {
-    Instances			result;
     ArrayList<Attribute> 	atts;
     Attribute			oldAtt;
     Attribute			newAtt;

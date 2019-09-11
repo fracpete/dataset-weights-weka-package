@@ -13,9 +13,9 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
+/*
  * AbstractRangeBasedAttributeWeightsModifier.java
- * Copyright (C) 2015 University of Waikato, Hamilton, NZ
+ * Copyright (C) 2015-2019 University of Waikato, Hamilton, NZ
  */
 
 package weka.filters.unsupervised.attribute.attributeweightsmodifiers;
@@ -25,15 +25,16 @@ import weka.core.Option;
 import weka.core.Range;
 import weka.core.Utils;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.Vector;
 
 /**
  * Ancestor for modifiers that only work on a subset of attributes.
  *
  * @author FracPete (fracpete at waikato dot ac dot nz)
- * @version $Revision$
  */
 public abstract class AbstractRangeBasedAttributeWeightsModifier
   extends AbstractAttributeWeightsModifier {
@@ -73,8 +74,6 @@ public abstract class AbstractRangeBasedAttributeWeightsModifier
   @Override
   public void setOptions(String[] options) throws Exception {
     String tmpStr;
-    String className;
-    String[] classOptions;
 
     tmpStr = Utils.getOption("R", options);
     if (tmpStr.length() != 0)
@@ -92,14 +91,14 @@ public abstract class AbstractRangeBasedAttributeWeightsModifier
    */
   @Override
   public String[] getOptions() {
-    Vector<String> result = new Vector<String>();
+    List<String> result = new ArrayList<String>();
 
     result.add("-R");
     result.add(getAttributeIndices());
 
     Collections.addAll(result, super.getOptions());
 
-    return result.toArray(new String[result.size()]);
+    return result.toArray(new String[0]);
   }
 
   /**

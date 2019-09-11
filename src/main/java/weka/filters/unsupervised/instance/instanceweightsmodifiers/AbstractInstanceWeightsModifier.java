@@ -13,9 +13,9 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
+/*
  * AbstractInstanceWeightsModifier.java
- * Copyright (C) 2015 University of Waikato, Hamilton, NZ
+ * Copyright (C) 2015-2019 University of Waikato, Hamilton, NZ
  */
 
 package weka.filters.unsupervised.instance.instanceweightsmodifiers;
@@ -29,8 +29,10 @@ import weka.core.OptionHandler;
 import weka.core.Utils;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Vector;
 
 /**
@@ -91,12 +93,12 @@ public abstract class AbstractInstanceWeightsModifier
    */
   @Override
   public String[] getOptions() {
-    Vector<String> options = new Vector<String>();
+    List<String> options = new ArrayList<String>();
 
     if (getDoNotCheckCapabilities())
       options.add("-do-not-check-capabilities");
 
-    return options.toArray(new String[options.size()]);
+    return options.toArray(new String[0]);
   }
 
   /**

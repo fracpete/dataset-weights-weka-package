@@ -13,9 +13,9 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
+/*
  * FromFile.java
- * Copyright (C) 2015 University of Waikato, Hamilton, NZ
+ * Copyright (C) 2015-2019 University of Waikato, Hamilton, NZ
  */
 
 package weka.filters.unsupervised.instance.instanceweightsmodifiers;
@@ -121,16 +121,16 @@ public class FromFile
    */
   @Override
   public String[] getOptions() {
-    Vector<String> result;
+    List<String> result;
 
-    result = new Vector<String>();
+    result = new ArrayList<String>();
 
     result.add("-weights");
     result.add("" + getWeightsFile());
 
     Collections.addAll(result, super.getOptions());
 
-    return result.toArray(new String[result.size()]);
+    return result.toArray(new String[0]);
   }
 
   /**
