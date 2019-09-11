@@ -15,6 +15,9 @@ Available modifiers for *attribute* weights:
 
 Available modifiers for *instance* weights:
 * `FixedValue` - applies the user-specified weight to selected range of rows  
+* `FixedValueByRegExp` - applies the user-specified weight to the rows which
+  values of a specified attribute match the regular expression (matching can 
+  be inverted)  
 * `FromAttribute` - uses the values from a numeric attribute as weights
 * `FromFile` - uses the weights stored in a file
 * `PassThrough` - dummy, does nothing
