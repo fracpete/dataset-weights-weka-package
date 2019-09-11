@@ -25,6 +25,7 @@ Available modifiers for *instance* weights:
 
 ## Releases
 
+* [2019.9.11](https://github.com/fracpete/dataset-weights-weka-package/releases/download/v2019.9.11/dataset-weights-2019.9.11.zip)
 * [2015.6.16](https://github.com/fracpete/dataset-weights-weka-package/releases/download/v2015.6.16/dataset-weights-2015.6.16.zip)
 
 
@@ -42,7 +43,7 @@ Use the following dependency in your `pom.xml`:
     <dependency>
       <groupId>com.github.fracpete</groupId>
       <artifactId>dataset-weights-weka-package</artifactId>
-      <version>2015.6.16</version>
+      <version>2019.9.11</version>
       <type>jar</type>
       <exclusions>
         <exclusion>
