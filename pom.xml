@@ -5,7 +5,7 @@
 
   <groupId>com.github.fracpete</groupId>
   <artifactId>dataset-weights-weka-package</artifactId>
-  <version>2019.9.13-SNAPSHOT</version>
+  <version>2019.9.13</version>
   <packaging>jar</packaging>
 
   <name>dataset-weights</name>
