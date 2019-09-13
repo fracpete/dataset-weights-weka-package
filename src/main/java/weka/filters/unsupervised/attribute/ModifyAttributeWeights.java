@@ -13,15 +13,16 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
+/*
  * ModifyAttributeWeights.java
- * Copyright (C) 2015 University of Waikato, Hamilton, NZ
+ * Copyright (C) 2015-2019 University of Waikato, Hamilton, NZ
  */
 
 package weka.filters.unsupervised.attribute;
 
 import weka.core.Instances;
 import weka.core.Option;
+import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.filters.SimpleBatchFilter;
 import weka.filters.unsupervised.attribute.attributeweightsmodifiers.AttributeWeightsModifier;
@@ -192,5 +193,23 @@ public class ModifyAttributeWeights
   @Override
   protected Instances process(Instances instances) throws Exception {
     return m_Modifier.modifyAttributeWeights(instances);
+  }
+
+  /**
+   * Returns the revision string.
+   *
+   * @return		the revision
+   */
+  public String getRevision() {
+    return RevisionUtils.extract("$Revision: -1 $");
+  }
+
+  /**
+   * Main method for executing this filter.
+   *
+   * @param args arguments to the filter: use -h for help
+   */
+  public static void main(String[] args) {
+    runFilter(new ModifyAttributeWeights(), args);
   }
 }
